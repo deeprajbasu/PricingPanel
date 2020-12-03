@@ -1,62 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Price Tiers</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/deeprajbasu/PricingPanel/main/app.css">
-</head>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 5;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-<body>
-    <div class="panel">
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
 
-        <div class="pricing-plan">
-            <img src="icons/0.svg" alt="" class="pricing-img">
-            <h2 class="pricing-header">Interest</h2>
-            <ul class="pricing-features">
-                <li class="pricing-features-item">Custom domains</li>
-                <li class="pricing-features-item">Beginner Sessions</li>
-                <li class="pricing-features-item">Daily reminders</li>
+body {
+  background-color: #f052b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-            </ul>
-            <div class="bo">
-            <span class="pricing-price">Free</span>
-            <a href="#/" class="pricing-button">Sign up</a></div>
-        </div>
+.panel {
+  background-color: rgb(255, 221, 237);
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
 
-        <div class="pricing-plan">
-            <img src="icons/1.svg" alt="" class="pricing-img">
-            <h2 class="pricing-header">Passion</h2>
-            <ul class="pricing-features">
-                <li class="pricing-features-item">+ Intermediate Courses</li>
-                <li class="pricing-features-item">Online Portal to contact experts</li>
-                <li class="pricing-features-item">Special Discounts</li>
-            </ul>
-            <div class="bo">
-            <span class="pricing-price">₹9000</span>
-            <a href="#/" class="pricing-button is-featured">Free trial</a></div>
-        </div>
+.pricing-plan {
+  border-bottom: 1px solid #5e1053;
+  position: relative;
+  /* height: 700px;  */
 
-        <div class="pricing-plan">
-            <img src="icons/3.svg" alt="" class="pricing-img">
-            <h2 class="pricing-header">Lifestyle</h2>
-            <ul class="pricing-features">
-                <li class="pricing-features-item">+ Advanced Courses</li>
-                <li class="pricing-features-item">Dedicated Support Team</li>
-                <li class="pricing-features-item">Live Video Sessions</li>
-            </ul>
-            <div class="bo">
-            <span class="pricing-price">₹14000</span>
-            <a href="#/" class="pricing-button">Free trial</a>
-            </div>
-            
-            
-        </div>
+  text-align:center;
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+.bo {
+  margin: auto;
+  justify-content: center;
+  /* display: flex;  */
+  position: relative; 
+  bottom: 0; 
+ 
+}
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 70%;
+}
 
-    </div>
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 
-</body>
+.pricing-features {
+  margin: 50px 0 25px;
+  color: #f9019a;
+}
 
-</html>
+.pricing-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #ffe1ef25;
+}
+
+.pricing-features-item:last-child{
+  border-bottom: 1px solid #b141b1;
+}
+
+.pricing-price {
+  margin: auto;
+  width: 50%;
+  color: #f9019a; 
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  
+  border: 1px solid #aa4190;
+  border-radius: 10px;
+  color: #9c5a99;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 15px ;
+  /* width: 50%; */
+  transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus {
+  background-color: #f590e1;
+}
+
+.pricing-button.is-featured {
+  background-color: #cf1f95;
+  color: white;
+}
+
+.pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+  background-color: #c223ba;
+  color: white;
+}
+
+
+@media (min-width: 900px){
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #cf8cd1;
+    padding: 25px 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
