@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Tiers</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="panel">
+
+        <div class="pricing-plan">
+            <img src="icons/0.svg" alt="" class="pricing-img">
+            <h2 class="pricing-header">Interest</h2>
+            <ul class="pricing-features">
+                <li class="pricing-features-item">Custom domains</li>
+                <li class="pricing-features-item">Beginner Sessions</li>
+                <li class="pricing-features-item">Daily reminders</li>
+
+            </ul>
+            <div class="bo">
+            <span class="pricing-price">Free</span>
+            <a href="#/" class="pricing-button">Sign up</a></div>
+        </div>
+
+        <div class="pricing-plan">
+            <img src="icons/1.svg" alt="" class="pricing-img">
+            <h2 class="pricing-header">Passion</h2>
+            <ul class="pricing-features">
+                <li class="pricing-features-item">+ Intermediate Courses</li>
+                <li class="pricing-features-item">Online Portal to contact experts</li>
+                <li class="pricing-features-item">Special Discounts</li>
+            </ul>
+            <div class="bo">
+            <span class="pricing-price">₹9000</span>
+            <a href="#/" class="pricing-button is-featured">Free trial</a></div>
+        </div>
+
+        <div class="pricing-plan">
+            <img src="icons/3.svg" alt="" class="pricing-img">
+            <h2 class="pricing-header">Lifestyle</h2>
+            <ul class="pricing-features">
+                <li class="pricing-features-item">+ Advanced Courses</li>
+                <li class="pricing-features-item">Dedicated Support Team</li>
+                <li class="pricing-features-item">Live Video Sessions</li>
+            </ul>
+            <div class="bo">
+            <span class="pricing-price">₹14000</span>
+            <a href="#/" class="pricing-button">Free trial</a>
+            </div>
+            
+            
+        </div>
+
+    </div>
+
+</body>
+
+</html>
